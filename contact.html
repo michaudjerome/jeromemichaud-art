@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact · Jérôme Michaud · Tirages d&#x27;Art</title><meta name="description" content="Contactez Jérôme Michaud pour un tirage d&#x27;Art ou une question.">
+<link rel="canonical" href="https://www.jeromemichaud.art/contact.html">
+<meta property="og:title" content="Contact · Jérôme Michaud · Tirages d&#x27;Art"><meta property="og:description" content="Contactez Jérôme Michaud pour un tirage d&#x27;Art ou une question."><meta property="og:image" content="https://www.jeromemichaud.art/img/quais-de-lyon-2400.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head>
+<body><header><div class="barre">
+<button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<nav aria-label="Navigation principale"><ul><li><a href="galerie.html">Galerie</a></li><li><a href="services.html">Services</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html" aria-current=page>Contact</a></li></ul></nav>
+<a class="logo" href="index.html" aria-label="Accueil, Jérôme Michaud"><img src="img/signature-blanc.png" alt="Jérôme Michaud" width="320" height="58"></a>
+<div class="droite"><a href="https://www.instagram.com/shoot.argentique/" rel="noopener">Instagram</a></div>
+</div></header>
+<main>
+<div class="page"><div class="intro"><h1 class="titre">Contact</h1><p>Si vous avez des questions, n’hésitez pas à m’écrire et je me ferai un plaisir de vous recontacter afin d’échanger avec vous.</p></div>
+<div class="coord"><a href="mailto:contact@jeromemichaud.art">contact@jeromemichaud.art</a><br>Lyon, FRANCE<br>Instagram : <a href="https://www.instagram.com/shoot.argentique/" rel="noopener">@shoot.argentique</a></div>
+<form class="formulaire " action="contact.php" method="post">
+  <div class="ligne"><label>Prénom <span>(obligatoire)</span><input name="prenom" required autocomplete="given-name"></label>
+  <label>Nom de famille <span>(obligatoire)</span><input name="nom" required autocomplete="family-name"></label></div>
+  <label>E-mail <span>(obligatoire)</span><input type="email" name="email" required autocomplete="email"></label>
+  <label>Message <span>(obligatoire)</span><textarea name="message" rows="6" required maxlength="5000"></textarea></label>
+  <label class="piege" aria-hidden="true">Ne pas remplir<input name="site_web" tabindex="-1" autocomplete="off"></label>
+  <input type="hidden" name="t" value="0">
+  <p class="rgpd">Vos coordonnées servent uniquement à vous répondre. Elles ne sont ni conservées sur ce site ni transmises à des tiers.</p>
+  <button type="submit" class="btn">Envoyer</button>
+  <p class="etat" role="status"></p>
+  <p class="secours">Vous pouvez aussi écrire directement à <a href="mailto:contact@jeromemichaud.art">contact@jeromemichaud.art</a>.</p>
+</form>
+<script>
+(function(){var f=document.querySelector('.formulaire');f.t.value=Math.floor(Date.now()/1000);
+var q=location.search,e=f.querySelector('.etat');
+if(q.indexOf('envoye=1')>-1){e.textContent='Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.';e.className='etat ok';}
+if(q.indexOf('erreur=1')>-1){e.textContent="Le message n'a pas pu être envoyé. Vérifiez les champs, ou écrivez directement à l'adresse ci-dessous.";e.className='etat ko';}})();
+</script></div></main>
+<footer><div>Localisation : Lyon, FRANCE</div><div>Mail : <a href="mailto:contact@jeromemichaud.art">contact@jeromemichaud.art</a></div>
+<div>Instagram : <a href="https://www.instagram.com/shoot.argentique/" rel="noopener">@shoot.argentique</a></div>
+<div class="petit">Photographies argentiques, tous droits réservés · <a href="mentions-legales.html">Mentions légales</a></div></footer>
+<script>document.querySelector('.burger').onclick=function(){var n=document.querySelector('header nav');var o=n.classList.toggle('ouvert');this.setAttribute('aria-expanded',o);};</script></body></html>

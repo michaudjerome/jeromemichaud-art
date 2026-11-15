@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>À propos · Jérôme Michaud · Tirages d&#x27;Art</title><meta name="description" content="Jérôme Michaud, photographe passionné d&#x27;argentique et de noir et blanc, près de Lyon.">
+<link rel="canonical" href="https://www.jeromemichaud.art/a-propos.html">
+<meta property="og:title" content="À propos · Jérôme Michaud · Tirages d&#x27;Art"><meta property="og:description" content="Jérôme Michaud, photographe passionné d&#x27;argentique et de noir et blanc, près de Lyon."><meta property="og:image" content="https://www.jeromemichaud.art/img/quais-de-lyon-2400.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head>
+<body><header><div class="barre">
+<button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<nav aria-label="Navigation principale"><ul><li><a href="galerie.html">Galerie</a></li><li><a href="services.html">Services</a></li><li><a href="a-propos.html" aria-current=page>À propos</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<a class="logo" href="index.html" aria-label="Accueil, Jérôme Michaud"><img src="img/signature-blanc.png" alt="Jérôme Michaud" width="320" height="58"></a>
+<div class="droite"><a href="https://www.instagram.com/shoot.argentique/" rel="noopener">Instagram</a></div>
+</div></header>
+<main>
+<section class="duo inverse"><div class="visuel"><img src="img/autoportrait-retroviseur-1600.jpg" width="1600" height="1057" alt="Autoportrait au boîtier argentique dans un rétroviseur"></div>
+<div class="texte"><h1 class="titre">Qui suis-je ?</h1>
+<p>Je m’appelle Jérôme Michaud, je suis passionné de photographie depuis toujours.</p>
+<p>Immortaliser une scène, un portrait, un paysage est pour moi une grande source d’épanouissement, d’autant plus en argentique et en noir et blanc.</p>
+<p>Mon oeil est en perpétuelle recherche de cadrages, de compositions et d’instants marquants qui attireront mon regard.</p>
+<p>J’apprécie autant la fugacité d’un instant capturé au détour d’une ruelle que le temps long de la contemplation avant le déclenchement.</p>
+<a class="btn" href="galerie.html">Voir la galerie</a></div></section><section class="piste-wrap" aria-label="Sélection de photographies"><button class="fleche g" aria-label="Précédent" onclick="this.nextElementSibling.scrollBy({left:-this.nextElementSibling.clientWidth*.8,behavior:'smooth'})">←</button>
+<div class="piste"><a class="zoom" href="img/carrousel-05-1400.jpg"><img loading="lazy" src="img/carrousel-05-700.jpg" width="700" height="467" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-06-1400.jpg"><img loading="lazy" src="img/carrousel-06-700.jpg" width="700" height="700" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-07-1400.jpg"><img loading="lazy" src="img/carrousel-07-700.jpg" width="700" height="700" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-08-1400.jpg"><img loading="lazy" src="img/carrousel-08-700.jpg" width="700" height="700" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-09-1400.jpg"><img loading="lazy" src="img/carrousel-09-700.jpg" width="700" height="600" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-10-1400.jpg"><img loading="lazy" src="img/carrousel-10-700.jpg" width="700" height="463" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-11-1400.jpg"><img loading="lazy" src="img/carrousel-11-700.jpg" width="700" height="700" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-12-1400.jpg"><img loading="lazy" src="img/carrousel-12-700.jpg" width="700" height="700" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-13-1400.jpg"><img loading="lazy" src="img/carrousel-13-700.jpg" width="700" height="467" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-14-1400.jpg"><img loading="lazy" src="img/carrousel-14-700.jpg" width="700" height="700" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-15-1400.jpg"><img loading="lazy" src="img/carrousel-15-700.jpg" width="600" height="700" alt="Photographie argentique noir et blanc"></a><a class="zoom" href="img/carrousel-16-1400.jpg"><img loading="lazy" src="img/carrousel-16-700.jpg" width="600" height="700" alt="Photographie argentique noir et blanc"></a></div><button class="fleche d" aria-label="Suivant" onclick="this.previousElementSibling.scrollBy({left:this.previousElementSibling.clientWidth*.8,behavior:'smooth'})">→</button></section></main>
+<footer><div>Localisation : Lyon, FRANCE</div><div>Mail : <a href="mailto:contact@jeromemichaud.art">contact@jeromemichaud.art</a></div>
+<div>Instagram : <a href="https://www.instagram.com/shoot.argentique/" rel="noopener">@shoot.argentique</a></div>
+<div class="petit">Photographies argentiques, tous droits réservés · <a href="mentions-legales.html">Mentions légales</a></div></footer>
+<script>document.querySelector('.burger').onclick=function(){var n=document.querySelector('header nav');var o=n.classList.toggle('ouvert');this.setAttribute('aria-expanded',o);};</script><div class="lb" id="lb" hidden><button class="lb-x" aria-label="Fermer">×</button><button class="lb-p" aria-label="Précédent">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lb-n" aria-label="Suivant">›</button></div>
+<script>
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img'),cap=lb.querySelector('figcaption'),list=[],i=0;
+function show(){var a=list[i];im.src=a.getAttribute('href');im.alt=a.dataset.titre||'';cap.innerHTML=a.dataset.legende||'';}
+document.addEventListener('click',function(e){var a=e.target.closest('a.zoom');if(!a)return;e.preventDefault();
+list=[].slice.call(document.querySelectorAll('a.zoom')).filter(function(x){return x.offsetParent!==null||x===a;});i=list.indexOf(a);show();lb.hidden=false;document.body.style.overflow='hidden';});
+function close(){lb.hidden=true;document.body.style.overflow='';im.src='';}
+lb.querySelector('.lb-x').onclick=close;lb.onclick=function(e){if(e.target===lb)close();};
+lb.querySelector('.lb-p').onclick=function(){i=(i-1+list.length)%list.length;show();};
+lb.querySelector('.lb-n').onclick=function(){i=(i+1)%list.length;show();};
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')lb.querySelector('.lb-p').click();if(e.key==='ArrowRight')lb.querySelector('.lb-n').click();});
+})();
+</script></body></html>
