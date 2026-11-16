@@ -9,8 +9,8 @@ ExpiresByType image/png "access plus 1 year"
 ExpiresByType font/woff2 "access plus 1 year"
 ExpiresByType text/css "access plus 1 week"
 </IfModule>
-# Redirection vers HTTPS et www : a ACTIVER apres activation du certificat SSL (retirer les #)
-#RewriteEngine On
-#RewriteCond %{HTTPS} off [OR]
-#RewriteCond %{HTTP_HOST} !^www\. [NC]
-#RewriteRule ^ https://www.jeromemichaud.art%{REQUEST_URI} [L,R=301]
+# Redirection permanente vers https://www.jeromemichaud.art (certificat SSL actif depuis le 16/11/2026)
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80 [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.jeromemichaud.art/$1 [R=301,L]
